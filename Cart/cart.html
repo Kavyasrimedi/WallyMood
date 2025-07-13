@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WallyMood - Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header_items">
+       <div class="header_left"><img src="https://marketplace.walmart.com/wp-content/uploads/2021/06/wmp-horizontal-b.svg
+        " width="217px" height="25px"></div>
+       <div class="header_mid">
+        <input class="search-box" type="text" placeholder="search">
+        <button class="header-button">
+            <img class="search-icon" src="https://supersimple.dev/projects/amazon/images/icons/search-icon.png">
+        </button>
+       </div>
+       <div class="header_right"> 
+            <button class="header-button" onclick="location.href='../Home/home.html'"><i class="fa-solid fa-house"></i></button>
+            <button class="header-button" onclick="location.href='../wishlist/wish.html'"><i class="fa-solid fa-heart fa-2x" style="color: #ff0505;"></i></button>
+            <button class="header-button" onclick="location.href='../cart/cart.html'"><img class="cart-icon" src="https://supersimple.dev/projects/amazon/images/icons/cart-icon.png
+                " width="50px" height="34px"></button>
+
+       </div>
+      </div>
+</header>
+
+  <main>
+    <h2 class="cart-title">Your Shopping Cart</h2>
+
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be inserted dynamically -->
+    </div>    
+    <div class="empty-cart" id="empty-cart" style="display:none; text-align: center; padding: 40px;">
+      <i class="fa-solid fa-cart-shopping fa-3x"></i>
+      <h2>Your cart is empty</h2>
+      <p>Start shopping and add items to your cart</p>
+      <button onclick="location.href='../Home/home.html'" class="continue-shopping-btn">
+        Continue Shopping
+      </button>
+    </div>
+    
+
+  
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>
